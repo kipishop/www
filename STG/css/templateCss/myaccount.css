@@ -1,0 +1,125 @@
+/*Small and up*/
+@media screen {
+    .woocommerce * { font-family: 'assistant'; font-weight: 400; color: #464646;}
+    .woocommerce { min-height: 53vh; padding: 0 1em; }
+    .woocommerce-MyAccount-navigation ul { margin: 0; list-style-type: none; }
+    .woocommerce-MyAccount-navigation ul li a { color: #464646; }
+    .woocommerce table { border-radius: 0!important; border-spacing: 0!important; }
+    .woocommerce table th { padding: 9px 12px!important; font-size: 18px; }
+    .woocommerce table td { padding: 6px 12px!important; font-size: 16px; }
+    .woocommerce table td { border-top: none!important; border-bottom: 1px solid #e7e7e7; }
+    .woocommerce table thead { background-color: #f6f6f6; }
+    .woocommerce table tbody { background-color: #fff; }
+    .woocommerce table th { border-bottom: 1px solid #e7e7e7; }
+ 
+    .link-warp { text-align: center; height: 80px; background-color: #f6f6f6; display: table; width: 100%;}
+    .link-warp a { color: #464646; display: table-cell; vertical-align: middle; }
+    .woocommerce-Address{ background-color: #f6f6f6; padding: 0.5em 1em; }
+    .woocommerce-button.view { width: 100px; text-align: center; background-color: #71cbd7!important; color: #fff!important; float: left; height: 45px; border-radius: 0!important; line-height: 20px!important; font-weight: 400!important; font-size: 17px!important; }
+    th.woocommerce-orders-table__header.woocommerce-orders-table__header-order-actions span { display: none; }
+    .myaccount-page-title h1 { font-size: 22px; margin-bottom: 2em; margin-top: 2em; }
+    /* li.woocommerce-MyAccount-navigation-link.is-active a { color: #71cbd7!important; } */
+    
+    input:not([type=submit]) { padding: 0.5em; }
+    input.woocommerce-Button.button { margin-top: 1em; }
+
+    /* Product Item */
+    .product-category, .product, .product-category .cat-title {
+        font-family: 'assistant';
+    }
+    .product {
+        padding-bottom: 3em;
+    }
+    
+    .product {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .product a.woocommerce-LoopProduct-link {
+        display: block;
+        min-height: 100px;
+    }
+
+    .woocommerce-LoopProduct-link img {
+        width: 100%;
+    }
+
+    .product .main-item-img {
+        opacity: 1;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .product:hover .main-item-img {
+        opacity: 0;
+    }
+
+    .product:hover .wishlist-text, .product i.fa.fa-heart-o, .product i.fa.fa-heart {
+        opacity: 1;
+    }
+
+    i.fa.fa-heart-o, i.fa.fa-heart {
+        opacity: 0;
+        position: absolute;
+        left: 21px;
+        margin-top: -30px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .wishlist-text {
+        opacity: 0;
+        position: absolute;
+        left: 15px;
+        margin-top: -15px;
+        font-size: 10px;
+        font-family: 'Assistant';
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .p-title {
+        font-family: 'Assistant';
+        color: #464646;
+        font-size: 18px;
+        line-height: 19px;
+        margin-top: 10px;
+        min-height: 38px;
+    }
+
+    .related-section del, .related-section ins, .product-section .amount.noDiscount, .product .amount.noDiscount {
+        font-size: 16px;
+    }
+    .product-section ins, .related-section ins, .product ins, .product .amount.noDiscount, .upsale-item .amount.noDiscount, .product-section .amount.noDiscount, .mobile-price .amount.noDiscount {
+        color: #3ba0ad;
+        text-decoration: none;
+    }
+    
+    .product-section del, .product-section ins, .upsale-item .price *, .product .price * {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    /* Product Item */
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

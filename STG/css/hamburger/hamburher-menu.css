@@ -1,0 +1,144 @@
+/* Small up */
+@media screen {
+    #top-menu li { display: block; }
+    #site-navigation {
+        position: absolute;
+        right: -65%;
+        width: 65%;
+        height: 920px;
+        top: 0;
+        padding: 4rem;
+        background-color: #fff;
+        z-index: 10;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    #site-navigation.open{ right: 0!important; }
+    .nav-background.open {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    #site-navigation.open #top-menu li:first-child {
+        -webkit-transition-delay: .3s;
+        transition-delay: .3s;
+    }
+    #site-navigation.open #top-menu li {
+        left: 0;
+        -webkit-transition: left .4s ease-out .3s,opacity .4s ease-out;
+        transition: left .4s ease-out .3s,opacity .4s ease-out;
+        opacity: 1;
+    }
+
+    #site-navigation #top-menu li {
+        left: -60px;
+        -webkit-transition: left .4s ease-out .4s;
+        transition: left .4s ease-out .4s;
+        opacity: 0;
+        position: relative;
+    }
+    #site-navigation #top-menu li:nth-child(2) {
+        -webkit-transition-delay: .34s;
+        transition-delay: .34s;
+    }
+    #site-navigation #top-menu li:nth-child(3) {
+        -webkit-transition-delay: .38s;
+        transition-delay: .38s;
+    }
+    #site-navigation #top-menu li:nth-child(4) {
+        -webkit-transition-delay: .42s;
+        transition-delay: .42s;
+    }
+    #site-navigation #top-menu li:nth-child(5) {
+        -webkit-transition-delay: .46s;
+        transition-delay: .46s;
+    }
+    #site-navigation #top-menu li:nth-child(6) {
+        -webkit-transition-delay: .50s;
+        transition-delay: .50s;
+    }
+    #site-navigation #top-menu li:nth-child(7) {
+        -webkit-transition-delay: .54s;
+        transition-delay: .54s;
+    }
+    #site-navigation #top-menu li:last-child {
+        -webkit-transition-delay: .5s;
+        transition-delay: .5s;
+    }
+    #site-navigation #top-menu li a { opacity: 0; }
+    #site-navigation.open #top-menu li a {
+        font-size: 1.765rem;
+        line-height: 100%;
+        text-transform: capitalize;
+        opacity: 1;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    .burger {
+        width: 28px;
+        height: 16px;
+        position: absolute;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        left: 2.5rem;
+        top: 2.5rem;
+        z-index: 11;
+    }
+    .burger span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #c1c1c1;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: top .25s ease-in-out,width .25s ease-in-out,left .25s ease-in-out,transform .25s ease-in-out,background 0s ease-in-out;
+        transition: top .25s ease-in-out,width .25s ease-in-out,left .25s ease-in-out,transform .25s ease-in-out,background 0s ease-in-out;
+    }
+    .burger span:nth-child(1) { top: 0; }
+    .burger span:nth-child(2) { top: 8px; }
+    .burger span:nth-child(3) { top: 8px; }
+    .burger span:nth-child(4) { top: 16px; }
+
+    .burger.open span:nth-child(1) { top: 18px; width: 0; left: 50%; }
+    .burger.open span:nth-child(2) { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+    .burger.open span:nth-child(3) { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+    .burger.open span:nth-child(4) { top: 18px; width: 0; left: 50%; }    
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    .burger { left: 5rem; }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    #site-navigation { padding: 5rem; }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+}

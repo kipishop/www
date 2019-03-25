@@ -1,0 +1,21 @@
+/*
+    @package STG
+*/
+
+/* remove Redux Ads */
+.rAds { display: none!important; } 
+
+.stg-general-form,
+.stg-sidebar-preview { display: inline-block; float: left; }
+
+.stg-sidebar-preview{ width: 280px; background-color: #1F1F1F; padding: 20px; text-align: center; margin-right: 20px; }
+.stg-sidebar { display: block; text-align: centerl }
+h1.stg-username,
+h2.stg-description { font-weight: 100; color: #fff; }
+h1.stg-username { font-size: 24px; margin: 0 0 10px; }
+h2.stg-username { font-size: 13px; margin: 0 0 20px; }
+
+.icons-wrapper { color: #fff; }
+.icons-wrapper a { color: #fff; text-decoration: none; font-size: 2em; margin: 0 4px 0 4px; }
+.icons-wrapper a:focus { box-shadow: none; }
+.logo{ width: 122px; height: 122px; background-position: center center; background-repeat: no-repeat; background-size: cover; border-radius: 50%; margin: 20px auto; }

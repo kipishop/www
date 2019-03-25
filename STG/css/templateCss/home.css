@@ -1,0 +1,141 @@
+/* Small up */
+@media screen {
+    /* body .links-header, .woocommerce, .banners { display: none!important; } */
+    .height-inherit { height: inherit; }
+
+
+    .page-template-home_page { min-height: 100vh; }
+    .page-template-home_page * { font-family: 'assistant'; }
+
+    .links-header { padding: 0 3em; }
+    .linksWarp { background-color: #fff; }
+    .link-item { display: table; border: 1px solid #d3d3d3; position: relative; padding: 0 1rem; border-bottom: none; height: 16.666%; width: 100%; }
+    .link-item img { padding: 7px 0; }
+    .link-item:last-of-type { border: 1px solid #d3d3d3; }
+    .link-item a { display: table-cell; vertical-align: middle; color: #888888; }
+
+    
+    .promoted-products-title, .promoted-products-title-seconde, .promoted-products-title-third { font-size: 26px; }
+    .imgWarp { height: 300px; background-repeat: no-repeat; background-position: right; background-size: contain; position: relative; }
+    .link-text { color: #000; font-size: 20px;}
+    .link-text-seconde { font-size: 14px; }
+    .imgText { position: absolute; left: 7%; top: 10%; font-size: 55px; width: 263px; text-align: center; }
+    .imgText p { line-height: 60px; color: #4b8b94; font-family: 'assistant'; font-weight: 600; }
+    .imgBtn { width: 210px; height: 52px; text-align: center; font-size: 20px; line-height: 45px; font-family: 'assistant'; background-color: #71cbd7; position: absolute; left: 10%; bottom: 20px; }
+    .imgBtn a { color: #fff; }
+    .promoted-products-seconde .column, .promoted-products-third .column { margin-top: 0!important; }
+    .promoted-products-title-seconde, .promoted-products-title-third { margin-bottom: 1em; }
+
+    .slick-dots li.slick-active button:before { color: black; top: 4px; font-size: 12px; left: 0; }
+    .slick-dots li:not(.slick-active) button:before { border: 1px solid #000!important; color: #fff; opacity: 1; font-size: 7px; border-radius: 1em; top: 8px; left: 5px; height: 10px; width: 10px; line-height: 30px; }
+    .row.woocommerce.no-top { margin-top: 1em!important; }
+    .imageCarousel-nav{ display: none!important; }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Small Medium only */
+@media screen and (max-width: 63.9375em) {
+    .imgText{
+        font-size: 35px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%); 
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+    }
+    .imgText p{
+        line-height: 40px;
+    }
+
+    .imgBtn{
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translateX(-50%); 
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+
+    .slide.equalHeight {
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 3em;
+    }
+    .row.full--width{
+        padding: 0;
+    }
+
+    
+    .slide-title {
+        text-align: center;
+        font-size: 25px;
+    }
+    .slide-text {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    a.slide-btn {
+        position: absolute;
+        right: 50%;
+        padding: 0.5em 1em;
+        -webkit-transform: translateX(50%); 
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .row .columns { position: relative; }
+    
+    .header-slider .slide { position: relative; height: 615px; background-repeat: no-repeat; background-position: top left; background-size: cover; }
+    .header-slider .slide-content { position: absolute; bottom: 4em; right: 6em; width: 20%; }
+    .slide-title {
+        font-size: 42px;
+        margin-bottom: 0.5em;
+        line-height: 42px;
+    }
+    .slide-text {
+        font-size: 17px;
+        margin-bottom: 2em;
+    }
+    a.slide-btn {
+        height: 55px;
+        padding: 1em 3em;
+        text-align: center;
+        color: #fff;
+    }
+    .promoted-products-img-text p {
+        font-size: 55px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        font-family: 'assistant';
+    }
+    .promoted-products-img-text {
+        position: absolute;
+        top: 80px;
+        left: 40px;
+    }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+}
+
+/*Specifc Res*/
+@media screen and ( max-width: 1280px) {
+    .hide-for-1280-down { display: none; }
+    .full--width-1280 { width: 100%!important; }
+}

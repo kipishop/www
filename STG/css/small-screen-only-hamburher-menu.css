@@ -1,0 +1,123 @@
+/* Small - Meduim only */
+@media screen and (max-width: 63.9375em) {
+    #top-menu li { display: block; }
+    html:lang(he-IL) #site-navigation{ right: -175%; }
+    html:lang(he-IL) #site-navigation.open{ right: 0!important; }
+    html:lang(he-IL) .burger{ right: 0.5rem; }
+    
+    html:lang(en-US) #site-navigation{ left: -175%; }
+    html:lang(en-US) #site-navigation.open{ left: 0!important; }
+    html:lang(he-IL) .burger{ left: 0.5rem; }
+
+    #site-navigation {
+        position: absolute;
+        width: 75%;
+        height: 100vh;
+        top: 0;
+        padding: 7rem 3rem;
+        background-color: #fff;
+        z-index: 10;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    #site-navigation.open{ overflow-y: scroll; }
+    .nav-background.open {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    #site-navigation.open #top-menu li:first-child {
+        -webkit-transition-delay: .3s;
+        transition-delay: .3s;
+    }
+    #site-navigation.open #top-menu li , #site-navigation.open #secondary-menu li{
+        left: 0;
+        -webkit-transition: left .4s ease-out .3s,opacity .4s ease-out;
+        transition: left .4s ease-out .3s,opacity .4s ease-out;
+        opacity: 1;
+    }
+
+    #site-navigation #top-menu li , #site-navigation #secondary-menu li {
+        left: -60px;
+        -webkit-transition: left .4s ease-out .4s;
+        transition: left .4s ease-out .4s;
+        opacity: 0;
+        position: relative;
+    }
+    #site-navigation #top-menu li:nth-child(2), #site-navigation #secondary-menu li:nth-child(2){
+        -webkit-transition-delay: .34s;
+        transition-delay: .34s;
+    }
+    #site-navigation #top-menu li:nth-child(3), #site-navigation #secondary-menu li:nth-child(3) {
+        -webkit-transition-delay: .38s;
+        transition-delay: .38s;
+    }
+    #site-navigation #top-menu li:nth-child(4),#site-navigation #secondary-menu li:nth-child(4) {
+        -webkit-transition-delay: .42s;
+        transition-delay: .42s;
+    }
+    #site-navigation #top-menu li:nth-child(5) {
+        -webkit-transition-delay: .46s;
+        transition-delay: .46s;
+    }
+    #site-navigation #top-menu li:nth-child(6) {
+        -webkit-transition-delay: .50s;
+        transition-delay: .50s;
+    }
+    #site-navigation #top-menu li:nth-child(7) {
+        -webkit-transition-delay: .54s;
+        transition-delay: .54s;
+    }
+    #site-navigation #top-menu li:last-child {
+        -webkit-transition-delay: .5s;
+        transition-delay: .5s;
+    }
+    #site-navigation #top-menu li a, #site-navigation #secondary-menu li a { opacity: 0; }
+    #site-navigation.open #top-menu li a, #site-navigation.open #secondary-menu li a {
+        opacity: 1;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    .burger {
+        width: 50px;
+        height: 100%;
+        position: absolute;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        top: 0;
+        z-index: 11;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .burger span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 60%;
+        background: #c1c1c1;
+        border-radius: 9px;
+        opacity: 1;
+        left: 7px;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: top .25s ease-in-out,width .25s ease-in-out,left .25s ease-in-out,transform .25s ease-in-out,background 0s ease-in-out;
+        transition: top .25s ease-in-out,width .25s ease-in-out,left .25s ease-in-out,transform .25s ease-in-out,background 0s ease-in-out;
+    }
+    .burger span:nth-child(1) { top: 0; }
+    .burger span:nth-child(2) { top: 8px; }
+    .burger span:nth-child(3) { top: 8px; }
+    .burger span:nth-child(4) { top: 16px; }
+
+    .burger.open span:nth-child(1) { top: 18px; width: 0; left: 50%; }
+    .burger.open span:nth-child(2) { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+    .burger.open span:nth-child(3) { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+    .burger.open span:nth-child(4) { top: 18px; width: 0; left: 50%; }    
+}

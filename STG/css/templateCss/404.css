@@ -1,0 +1,26 @@
+/* Small up */
+@media screen  {
+    .pageNotFound{ min-height: 73vh; margin-top: 14rem; font-family: 'assistant'; }
+    .text-container { position: relative; margin-bottom: 3em; }
+    .firstLine { font-size: 2.8em; font-weight: 600; letter-spacing: -1px; }
+    .secondeLine { font-size: 1.7em; letter-spacing: -0.6px;  padding: 0% 23% 0% 23%; }
+    .pageNotFound .links-container a { border-radius: 0px 0px 0px 0px; padding: 18px 80px 18px 80px; color: #fff; margin: 0 1em; }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .pageNotFound .links-container a { display: inline-block; margin-bottom: 1em; }
+    .pageNotFound { margin-top: 7rem; }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
